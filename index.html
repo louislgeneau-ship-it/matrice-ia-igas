@@ -103,7 +103,6 @@
             margin-right: 12px;
             margin-top: 3px;
             accent-color: var(--primary-color);
-            flex-shrink: 0;
         }
 
         .option-text {
@@ -199,7 +198,7 @@
 <div class="container">
     <header>
         <h1>Auto-évaluation de la Maturité IA</h1>
-        <p class="intro">Outil d'évaluation fondé sur les critères officiels de l'Annexe XVII du rapport IGAS.</p>
+        <p class="intro">Outil d'évaluation fondé sur le schéma circulaire officiel (Annexe XVII du rapport IGAS).</p>
     </header>
 
     <form id="maturityForm">
@@ -208,11 +207,11 @@
             <div class="step-indicator">Axe 1 sur 8 : Vision stratégique</div>
             <div class="axis-title">Quel est le niveau d'alignement stratégique de l'IA au sein de votre organisation ?</div>
             <div class="options-group">
-                <label class="option-label"><input type="radio" name="axis1" value="0"><span class="option-text"><strong>Niveau 0 :</strong> Absence de stratégie IA ou de projet d'IA au service de la valeur publique.</span></label>
-                <label class="option-label"><input type="radio" name="axis1" value="1"><span class="option-text"><strong>Niveau 1 :</strong> Projet IA sans lien avec le plan stratégique, l'IA est un projet numérique décliné par les directions et les services.</span></label>
-                <label class="option-label"><input type="radio" name="axis1" value="2"><span class="option-text"><strong>Niveau 2 :</strong> Stratégie IA au service du plan stratégique et alignée avec la politique institutionnelle, portée par la direction générale dans une culture d'adoption, comportant des objectifs priorisés, des financements associés, des indicateurs de suivi et une évaluation des risques associés.</span></label>
-                <label class="option-label"><input type="radio" name="axis1" value="3"><span class="option-text"><strong>Niveau 3 :</strong> Pilotage et mise en œuvre de la stratégie IA par une direction de projet IA (ou AI office) placée au sein de la direction générale associant les autres directions.</span></label>
-                <label class="option-label"><input type="radio" name="axis1" value="4"><span class="option-text"><strong>Niveau 4 :</strong> Déclinaison par les directions et services de la stratégie IA pilotée et mise en œuvre par une direction de projet IA (ou AI office) au sein de la direction générale au service de la valeur publique.</span></label>
+                <label class="option-label"><input type="radio" name="axis1" value="0"><span class="option-text"><strong>Niveau 0 :</strong> Absence de stratégie IA formalisée comme projet numérique</span></label>
+                <label class="option-label"><input type="radio" name="axis1" value="1"><span class="option-text"><strong>Niveau 1 :</strong> Stratégie IA alignée et complète</span></label>
+                <label class="option-label"><input type="radio" name="axis1" value="2"><span class="option-text"><strong>Niveau 2 :</strong> Stratégie IA déclinée par directions et services</span></label>
+                <label class="option-label"><input type="radio" name="axis1" value="3"><span class="option-text"><strong>Niveau 3 :</strong> Pilotage de la stratégie par une direction de projet</span></label>
+                <label class="option-label"><input type="radio" name="axis1" value="4"><span class="option-text"><strong>Niveau 4 :</strong> Déclinaison par les directions et services de la stratégie IA au service de la valeur publique</span></label>
             </div>
             <div class="error-msg" id="err-1">Veuillez sélectionner une option pour poursuivre.</div>
         </div>
@@ -222,11 +221,11 @@
             <div class="step-indicator">Axe 2 sur 8 : Gouvernance et cadre éthique</div>
             <div class="axis-title">Comment s'organisent la gouvernance et le cadre éthique de vos projets d'IA ?</div>
             <div class="options-group">
-                <label class="option-label"><input type="radio" name="axis2" value="0"><span class="option-text"><strong>Niveau 0 :</strong> Absence de gouvernance, de charte d'usage, de définition des responsabilités.</span></label>
-                <label class="option-label"><input type="radio" name="axis2" value="1"><span class="option-text"><strong>Niveau 1 :</strong> Charte d'utilisation de l'IA précisant la gouvernance, les responsabilités et l'éthique : primauté humaine, positionnement vis-à-vis des usages shadow, utilisation des données sensibles, transparence et explicabilité.</span></label>
-                <label class="option-label"><input type="radio" name="axis2" value="2"><span class="option-text"><strong>Niveau 2 :</strong> Comité de pilotage pluridisciplinaire positionné au niveau direction générale.</span></label>
-                <label class="option-label"><input type="radio" name="axis2" value="3"><span class="option-text"><strong>Niveau 3 :</strong> Dispositif formalisé de priorisation et de validations des projets (POC, généralisation) selon des critères clairs.</span></label>
-                <label class="option-label"><input type="radio" name="axis2" value="4"><span class="option-text"><strong>Niveau 4 :</strong> Dispositif formalisé de surveillance de l'éthique dont comité d'experts/d'éthique.</span></label>
+                <label class="option-label"><input type="radio" name="axis2" value="0"><span class="option-text"><strong>Niveau 0 :</strong> Absence de gouvernance IA</span></label>
+                <label class="option-label"><input type="radio" name="axis2" value="1"><span class="option-text"><strong>Niveau 1 :</strong> Charte d'utilisation de l'IA</span></label>
+                <label class="option-label"><input type="radio" name="axis2" value="2"><span class="option-text"><strong>Niveau 2 :</strong> Comité de pilotage stratégique pluridisciplinaire</span></label>
+                <label class="option-label"><input type="radio" name="axis2" value="3"><span class="option-text"><strong>Niveau 3 :</strong> Cadre de priorisation et validation des projets</span></label>
+                <label class="option-label"><input type="radio" name="axis2" value="4"><span class="option-text"><strong>Niveau 4 :</strong> Dispositif de surveillance de l'éthique</span></label>
             </div>
             <div class="error-msg" id="err-2">Veuillez sélectionner une option pour poursuivre.</div>
         </div>
@@ -236,11 +235,11 @@
             <div class="step-indicator">Axe 3 sur 8 : Maîtrise des risques et conformité</div>
             <div class="axis-title">Quel est le niveau de maîtrise des risques (juridiques, sécurité, éthique) ?</div>
             <div class="options-group">
-                <label class="option-label"><input type="radio" name="axis3" value="0"><span class="option-text"><strong>Niveau 0 :</strong> Absence de système de maîtrise des risques.</span></label>
-                <label class="option-label"><input type="radio" name="axis3" value="1"><span class="option-text"><strong>Niveau 1 :</strong> Prise en compte des risques juridiques, cybersécurité, éthiques, sociaux dans la stratégie IA et identification de mesures de maîtrise spécifiques.</span></label>
-                <label class="option-label"><input type="radio" name="axis3" value="2"><span class="option-text"><strong>Niveau 2 :</strong> Prise en compte des risques spécifiques pour chaque projet IA et des mesures de maîtrise spécifiques.</span></label>
-                <label class="option-label"><input type="radio" name="axis3" value="3"><span class="option-text"><strong>Niveau 3 :</strong> Système de management des risques avec évaluation interne continue (test d'intrusion, audit de sécurité, détection des biais, indicateurs d'équité, audit des modèles).</span></label>
-                <label class="option-label"><input type="radio" name="axis3" value="4"><span class="option-text"><strong>Niveau 4 :</strong> Existence de plan de continuité d'activité sans IA et de maîtrise des défaillances.</span></label>
+                <label class="option-label"><input type="radio" name="axis3" value="0"><span class="option-text"><strong>Niveau 0 :</strong> Absence de système de maîtrise des risques</span></label>
+                <label class="option-label"><input type="radio" name="axis3" value="1"><span class="option-text"><strong>Niveau 1 :</strong> Risques identifiés globalement avec mesures de maîtrise</span></label>
+                <label class="option-label"><input type="radio" name="axis3" value="2"><span class="option-text"><strong>Niveau 2 :</strong> Risques identifiés par projet avec mesures spécifiques</span></label>
+                <label class="option-label"><input type="radio" name="axis3" value="3"><span class="option-text"><strong>Niveau 3 :</strong> Système de management des risques</span></label>
+                <label class="option-label"><input type="radio" name="axis3" value="4"><span class="option-text"><strong>Niveau 4 :</strong> Plan de continuité d'activité sans IA</span></label>
             </div>
             <div class="error-msg" id="err-3">Veuillez sélectionner une option pour poursuivre.</div>
         </div>
@@ -250,11 +249,11 @@
             <div class="step-indicator">Axe 4 sur 8 : Gestion de la donnée</div>
             <div class="axis-title">Quelle est la maturité de votre patrimoine de données pour nourrir l'IA ?</div>
             <div class="options-group">
-                <label class="option-label"><input type="radio" name="axis4" value="0"><span class="option-text"><strong>Niveau 0 :</strong> Données fragmentées ou isolées.</span></label>
-                <label class="option-label"><input type="radio" name="axis4" value="1"><span class="option-text"><strong>Niveau 1 :</strong> Données sécurisées et sauvegardées selon des pratiques métiers « locales ».</span></label>
-                <label class="option-label"><input type="radio" name="axis4" value="2"><span class="option-text"><strong>Niveau 2 :</strong> Données centralisées et accessibles (par API par exemple).</span></label>
-                <label class="option-label"><input type="radio" name="axis4" value="3"><span class="option-text"><strong>Niveau 3 :</strong> Données centralisées, gouvernées, sécurisées et catégorisées par sensibilité.</span></label>
-                <label class="option-label"><input type="radio" name="axis4" value="4"><span class="option-text"><strong>Niveau 4 :</strong> Données gouvernées, industrialisées (avec collecte de métadonnées) et suivies en continu (en termes de qualité notamment).</span></label>
+                <label class="option-label"><input type="radio" name="axis4" value="0"><span class="option-text"><strong>Niveau 0 :</strong> Données fragmentées et isolées</span></label>
+                <label class="option-label"><input type="radio" name="axis4" value="1"><span class="option-text"><strong>Niveau 1 :</strong> Données sécurisées et sauvegardées</span></label>
+                <label class="option-label"><input type="radio" name="axis4" value="2"><span class="option-text"><strong>Niveau 2 :</strong> Données centralisées et accessibles</span></label>
+                <label class="option-label"><input type="radio" name="axis4" value="3"><span class="option-text"><strong>Niveau 3 :</strong> Données gouvernées et catégorisées</span></label>
+                <label class="option-label"><input type="radio" name="axis4" value="4"><span class="option-text"><strong>Niveau 4 :</strong> Données industrialisées et suivies en continu</span></label>
             </div>
             <div class="error-msg" id="err-4">Veuillez sélectionner une option pour poursuivre.</div>
         </div>
@@ -264,11 +263,11 @@
             <div class="step-indicator">Axe 5 sur 8 : Infrastructure numérique</div>
             <div class="axis-title">Votre infrastructure SI est-elle adaptée au déploiement de solutions d'IA ?</div>
             <div class="options-group">
-                <label class="option-label"><input type="radio" name="axis5" value="0"><span class="option-text"><strong>Niveau 0 :</strong> Silos applicatifs : applications indépendantes, peu ou pas d'API, échanges manuels de données, déploiement manuel.</span></label>
-                <label class="option-label"><input type="radio" name="axis5" value="1"><span class="option-text"><strong>Niveau 1 :</strong> Intégration basique : API disponibles, échanges automatisés, environnements séparés.</span></label>
-                <label class="option-label"><input type="radio" name="axis5" value="2"><span class="option-text"><strong>Niveau 2 :</strong> Architecture permettant de concevoir ses propres SIA.</span></label>
-                <label class="option-label"><input type="radio" name="axis5" value="3"><span class="option-text"><strong>Niveau 3 :</strong> Plateforme avec capacités de stockage et de calcul adaptées (et mutualisées).</span></label>
-                <label class="option-label"><input type="radio" name="axis5" value="4"><span class="option-text"><strong>Niveau 4 :</strong> Intégration de l'IA nativement dans les SI et évolutivité / scalabilité anticipées.</span></label>
+                <label class="option-label"><input type="radio" name="axis5" value="0"><span class="option-text"><strong>Niveau 0 :</strong> Silos applicatifs</span></label>
+                <label class="option-label"><input type="radio" name="axis5" value="1"><span class="option-text"><strong>Niveau 1 :</strong> Intégration basique</span></label>
+                <label class="option-label"><input type="radio" name="axis5" value="2"><span class="option-text"><strong>Niveau 2 :</strong> Architecture de conception des SI internes</span></label>
+                <label class="option-label"><input type="radio" name="axis5" value="3"><span class="option-text"><strong>Niveau 3 :</strong> Plateforme avec capacités de stockage et de calcul adaptées (et mutualisées)</span></label>
+                <label class="option-label"><input type="radio" name="axis5" value="4"><span class="option-text"><strong>Niveau 4 :</strong> Intégration de l'IA dans les outils SI et évolutivité</span></label>
             </div>
             <div class="error-msg" id="err-5">Veuillez sélectionner une option pour poursuivre.</div>
         </div>
@@ -278,7 +277,195 @@
             <div class="step-indicator">Axe 6 sur 8 : Intégration de l'IA aux processus métier</div>
             <div class="axis-title">Comment l'IA s'articule-t-elle avec les besoins et processus du terrain ?</div>
             <div class="options-group">
-                <label class="option-label"><input type="radio" name="axis6" value="0"><span class="option-text"><strong>Niveau 0 :</strong> Absence de visibilité sur les initiatives et besoins métiers.</span></label>
-                <label class="option-label"><input type="radio" name="axis6" value="1"><span class="option-text"><strong>Niveau 1 :</strong> Démarche bottom-up avec remontée des initiatives métier, encouragement de leur foisonnement.</span></label>
-                <label class="option-label"><input type="radio" name="axis6" value="2"><span class="option-text"><strong>Niveau 2 :</strong> Démarche structurée avec sélection des propositions métiers en lien avec la stratégie (articulation bottom-up / top-down).</span></label>
-                <label class="option-label"><input type="radio" name="axis6" value="3"><span class="option-text"><strong>Niveau 3 :</strong> Démarche structurée et organisation en mode produit avec refonte des processus métiers.</span></label>
+                <label class="option-label"><input type="radio" name="axis6" value="0"><span class="option-text"><strong>Niveau 0 :</strong> Absence de visibilité sur les besoins métiers</span></label>
+                <label class="option-label"><input type="radio" name="axis6" value="1"><span class="option-text"><strong>Niveau 1 :</strong> Démarche bottom-up foisonnante</span></label>
+                <label class="option-label"><input type="radio" name="axis6" value="2"><span class="option-text"><strong>Niveau 2 :</strong> Articulation initiatives métiers et orientations stratégiques</span></label>
+                <label class="option-label"><input type="radio" name="axis6" value="3"><span class="option-text"><strong>Niveau 3 :</strong> Refonte des processus en mode produit</span></label>
+                <label class="option-label"><input type="radio" name="axis6" value="4"><span class="option-text"><strong>Niveau 4 :</strong> Évaluation continue et ajustements</span></label>
+            </div>
+            <div class="error-msg" id="err-6">Veuillez sélectionner une option pour poursuivre.</div>
+        </div>
+
+        <!-- AXE 7 -->
+        <div class="axis-card" data-step="7">
+            <div class="step-indicator">Axe 7 sur 8 : Compétences et accompagnement RH</div>
+            <div class="axis-title">Quel est l'accompagnement des équipes et le plan de gestion des compétences ?</div>
+            <div class="options-group">
+                <label class="option-label"><input type="radio" name="axis7" value="0"><span class="option-text"><strong>Niveau 0 :</strong> Absence de stratégie RH</span></label>
+                <label class="option-label"><input type="radio" name="axis7" value="1"><span class="option-text"><strong>Niveau 1 :</strong> Dialogue social technologique</span></label>
+                <label class="option-label"><input type="radio" name="axis7" value="2"><span class="option-text"><strong>Niveau 2 :</strong> Plan de sensibilisation / formation</span></label>
+                <label class="option-label"><input type="radio" name="axis7" value="3"><span class="option-text"><strong>Niveau 3 :</strong> Programmes de montée en compétences</span></label>
+                <label class="option-label"><input type="radio" name="axis7" value="4"><span class="option-text"><strong>Niveau 4 :</strong> Anticipation des impacts compétences / métiers</span></label>
+            </div>
+            <div class="error-msg" id="err-7">Veuillez sélectionner une option pour poursuivre.</div>
+        </div>
+
+        <!-- AXE 8 -->
+        <div class="axis-card" data-step="8">
+            <div class="step-indicator">Axe 8 sur 8 : Pilotage par la valeur</div>
+            <div class="axis-title">Comment mesurez-vous le retour sur investissement et la valeur publique créée ?</div>
+            <div class="options-group">
+                <label class="option-label"><input type="radio" name="axis8" value="0"><span class="option-text"><strong>Niveau 0 :</strong> Absence de suivi des projets</span></label>
+                <label class="option-label"><input type="radio" name="axis8" value="1"><span class="option-text"><strong>Niveau 1 :</strong> Indicateurs multidimensionnels de mesure de la valeur</span></label>
+                <label class="option-label"><input type="radio" name="axis8" value="2"><span class="option-text"><strong>Niveau 2 :</strong> Arbitrages internes basés sur la mesure de la valeur et des risques</span></label>
+                <label class="option-label"><input type="radio" name="axis8" value="3"><span class="option-text"><strong>Niveau 3 :</strong> Ajustements en continu des projets et SIA basés sur la valeur et les risques</span></label>
+                <label class="option-label"><input type="radio" name="axis8" value="4"><span class="option-text"><strong>Niveau 4 :</strong> Processus d'amélioration continue garantissant l'agilité de la structure</span></label>
+            </div>
+            <div class="error-msg" id="err-8">Veuillez sélectionner une option pour poursuivre.</div>
+        </div>
+
+        <!-- Boutons de navigation -->
+        <div class="buttons-nav" id="navButtons">
+            <button type="button" class="btn btn-prev" id="prevBtn" style="display:none;" onclick="changeStep(-1)">Précédent</button>
+            <button type="button" class="btn btn-next" id="nextBtn" onclick="nextStep()">Suivant</button>
+        </div>
+    </form>
+
+    <!-- Zone de restitution des résultats -->
+    <div id="results-section">
+        <h2>Résultats de votre auto-évaluation</h2>
+        <div class="results-grid">
+            <div class="score-box">
+                <h3>Niveau de maturité globale</h3>
+                <div class="score-value" id="globalScore">0 / 4</div>
+                <p id="profileSummary"></p>
+            </div>
+            <div class="chart-container">
+                <canvas id="radarChart"></canvas>
+            </div>
+        </div>
+        <button type="button" class="btn btn-next" style="margin-top: 25px; width: 100%; text-align: center;" onclick="location.reload()">Recommencer l'évaluation</button>
+    </div>
+</div>
+
+<script>
+    let currentStep = 1;
+    const totalSteps = 8;
+    let radarChart = null;
+
+    function showStep(step) {
+        document.querySelectorAll('.axis-card').forEach(card => {
+            card.classList.remove('active');
+        });
+        document.querySelector(`.axis-card[data-step="${step}"]`).classList.add('active');
+
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+
+        prevBtn.style.display = (step === 1) ? 'none' : 'inline-block';
+        nextBtn.innerText = (step === totalSteps) ? "Générer mon bilan" : "Suivant";
+    }
+
+    function changeStep(direction) {
+        currentStep += direction;
+        if (currentStep < 1) currentStep = 1;
+        if (currentStep > totalSteps) currentStep = totalSteps;
+        showStep(currentStep);
+    }
+
+    function nextStep() {
+        const currentCard = document.querySelector(`.axis-card[data-step="${currentStep}"]`);
+        const selected = currentCard.querySelector('input[type="radio"]:checked');
+        const errorMsg = document.getElementById(`err-${currentStep}`);
+
+        if (!selected) {
+            errorMsg.style.display = 'block';
+            return;
+        } else {
+            errorMsg.style.display = 'none';
+        }
+
+        if (currentStep < totalSteps) {
+            currentStep++;
+            showStep(currentStep);
+        } else {
+            generateResults();
+        }
+    }
+
+    function generateResults() {
+        const scores = [];
+        for (let i = 1; i <= 8; i++) {
+            const val = document.querySelector(`input[name="axis${i}"]:checked`).value;
+            scores.push(parseInt(val, 10));
+        }
+
+        const total = scores.reduce((acc, curr) => acc + curr, 0);
+        const average = (total / 8).toFixed(1);
+
+        document.getElementById('globalScore').innerText = `${average} / 4`;
+
+        let summary = "";
+        if (average < 1.5) {
+            summary = "<strong>Stade Acculturation / Initialisation :</strong> Les fondations de votre organisation doivent être consolidées. Priorisez la gouvernance, la qualification des données et l'acculturation des agents.";
+        } else if (average < 3) {
+            summary = "<strong>Stade Déploiement / Consolidation :</strong> Vos bases sont solides sur plusieurs axes. Renforcez l'industrialisation, le système de gestion des risques et le cadre RH pour passer à l'échelle.";
+        } else {
+            summary = "<strong>Stade Transformation & Industrialisation :</strong> Votre structure dispose d'un niveau de maturité avancé (AI Office, gouvernance éthique, SI nativement prêt) permettant une généralisation maîtrisée.";
+        }
+        document.getElementById('profileSummary').innerHTML = summary;
+
+        document.getElementById('maturityForm').style.display = 'none';
+        document.getElementById('results-section').style.display = 'block';
+
+        const ctx = document.getElementById('radarChart').getContext('2d');
+        if (radarChart) {
+            radarChart.destroy();
+        }
+
+        radarChart = new Chart(ctx, {
+            type: 'radar',
+            data: {
+                labels: [
+                    'Vision stratégique',
+                    'Gouvernance & Éthique',
+                    'Maîtrise des risques',
+                    'Gestion de la donnée',
+                    'Infrastructure SI',
+                    'Processus Métier',
+                    'RH & Compétences',
+                    'Pilotage par la valeur'
+                ],
+                datasets: [{
+                    label: 'Niveau de maturité (0 à 4)',
+                    data: scores,
+                    backgroundColor: 'rgba(0, 0, 145, 0.25)',
+                    borderColor: '#000091',
+                    borderWidth: 2.5,
+                    pointBackgroundColor: '#000091',
+                    pointRadius: 4
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: true,
+                layout: {
+                    padding: 20
+                },
+                scales: {
+                    r: {
+                        min: 0,
+                        max: 4,
+                        ticks: {
+                            stepSize: 1,
+                            font: { size: 11 },
+                            display: true
+                        },
+                        pointLabels: {
+                            font: { size: 12, weight: 'bold' },
+                            color: '#000091'
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                }
+            }
+        });
+    }
+</script>
+
+</body>
+</html>
