@@ -198,7 +198,7 @@
 <div class="container">
     <header>
         <h1>Auto-évaluation de la Maturité IA</h1>
-        <p class="intro">Outil d'évaluation fondé sur la matrice du rapport IGAS (Annexe XVII).</p>
+        <p class="intro">Outil d'évaluation fondé sur le schéma circulaire officiel (Annexe XVII du rapport IGAS).</p>
     </header>
 
     <form id="maturityForm">
@@ -207,11 +207,11 @@
             <div class="step-indicator">Axe 1 sur 8 : Vision stratégique</div>
             <div class="axis-title">Quel est le niveau d'alignement stratégique de l'IA au sein de votre organisation ?</div>
             <div class="options-group">
-                <label class="option-label"><input type="radio" name="axis1" value="0"><span class="option-text"><strong>Niveau 0 :</strong> Absence de stratégie IA ou de projet IA au service de la valeur publique.</span></label>
-                <label class="option-label"><input type="radio" name="axis1" value="1"><span class="option-text"><strong>Niveau 1 :</strong> Projets IA isolés, sans lien formel avec le plan stratégique, déclinés de manière ad hoc par les services.</span></label>
-                <label class="option-label"><input type="radio" name="axis1" value="2"><span class="option-text"><strong>Niveau 2 :</strong> Stratégie IA formalisée et alignée avec la politique institutionnelle, portée par la direction générale avec objectifs priorisés et évaluation des risques.</span></label>
-                <label class="option-label"><input type="radio" name="axis1" value="3"><span class="option-text"><strong>Niveau 3 :</strong> Pilotage et mise en œuvre structurés par une direction de projet dédiée (ou AI Office) au sein de la direction générale.</span></label>
-                <label class="option-label"><input type="radio" name="axis1" value="4"><span class="option-text"><strong>Niveau 4 :</strong> Déclinaison transversale de la stratégie IA pilotée par l'AI Office au service de la valeur publique et réévaluée en continu.</span></label>
+                <label class="option-label"><input type="radio" name="axis1" value="0"><span class="option-text"><strong>Niveau 0 :</strong> Absence de stratégie IA formalisée comme projet numérique</span></label>
+                <label class="option-label"><input type="radio" name="axis1" value="1"><span class="option-text"><strong>Niveau 1 :</strong> Stratégie IA alignée et complète</span></label>
+                <label class="option-label"><input type="radio" name="axis1" value="2"><span class="option-text"><strong>Niveau 2 :</strong> Stratégie IA déclinée par directions et services</span></label>
+                <label class="option-label"><input type="radio" name="axis1" value="3"><span class="option-text"><strong>Niveau 3 :</strong> Pilotage de la stratégie par une direction de projet</span></label>
+                <label class="option-label"><input type="radio" name="axis1" value="4"><span class="option-text"><strong>Niveau 4 :</strong> Déclinaison par les directions et services de la stratégie IA au service de la valeur publique</span></label>
             </div>
             <div class="error-msg" id="err-1">Veuillez sélectionner une option pour poursuivre.</div>
         </div>
@@ -219,4 +219,48 @@
         <!-- AXE 2 -->
         <div class="axis-card" data-step="2">
             <div class="step-indicator">Axe 2 sur 8 : Gouvernance et cadre éthique</div>
-            <div class="axis-title">Comment
+            <div class="axis-title">Comment s'organisent la gouvernance et le cadre éthique de vos projets d'IA ?</div>
+            <div class="options-group">
+                <label class="option-label"><input type="radio" name="axis2" value="0"><span class="option-text"><strong>Niveau 0 :</strong> Absence de gouvernance IA</span></label>
+                <label class="option-label"><input type="radio" name="axis2" value="1"><span class="option-text"><strong>Niveau 1 :</strong> Charte d'utilisation de l'IA</span></label>
+                <label class="option-label"><input type="radio" name="axis2" value="2"><span class="option-text"><strong>Niveau 2 :</strong> Comité de pilotage stratégique pluridisciplinaire</span></label>
+                <label class="option-label"><input type="radio" name="axis2" value="3"><span class="option-text"><strong>Niveau 3 :</strong> Cadre de priorisation et validation des projets</span></label>
+                <label class="option-label"><input type="radio" name="axis2" value="4"><span class="option-text"><strong>Niveau 4 :</strong> Dispositif de surveillance de l'éthique</span></label>
+            </div>
+            <div class="error-msg" id="err-2">Veuillez sélectionner une option pour poursuivre.</div>
+        </div>
+
+        <!-- AXE 3 -->
+        <div class="axis-card" data-step="3">
+            <div class="step-indicator">Axe 3 sur 8 : Maîtrise des risques et conformité</div>
+            <div class="axis-title">Quel est le niveau de maîtrise des risques (juridiques, sécurité, éthique) ?</div>
+            <div class="options-group">
+                <label class="option-label"><input type="radio" name="axis3" value="0"><span class="option-text"><strong>Niveau 0 :</strong> Absence de système de maîtrise des risques</span></label>
+                <label class="option-label"><input type="radio" name="axis3" value="1"><span class="option-text"><strong>Niveau 1 :</strong> Risques identifiés globalement avec mesures de maîtrise</span></label>
+                <label class="option-label"><input type="radio" name="axis3" value="2"><span class="option-text"><strong>Niveau 2 :</strong> Risques identifiés par projet avec mesures spécifiques</span></label>
+                <label class="option-label"><input type="radio" name="axis3" value="3"><span class="option-text"><strong>Niveau 3 :</strong> Système de management des risques</span></label>
+                <label class="option-label"><input type="radio" name="axis3" value="4"><span class="option-text"><strong>Niveau 4 :</strong> Plan de continuité d'activité sans IA</span></label>
+            </div>
+            <div class="error-msg" id="err-3">Veuillez sélectionner une option pour poursuivre.</div>
+        </div>
+
+        <!-- AXE 4 -->
+        <div class="axis-card" data-step="4">
+            <div class="step-indicator">Axe 4 sur 8 : Gestion de la donnée</div>
+            <div class="axis-title">Quelle est la maturité de votre patrimoine de données pour nourrir l'IA ?</div>
+            <div class="options-group">
+                <label class="option-label"><input type="radio" name="axis4" value="0"><span class="option-text"><strong>Niveau 0 :</strong> Données fragmentées et isolées</span></label>
+                <label class="option-label"><input type="radio" name="axis4" value="1"><span class="option-text"><strong>Niveau 1 :</strong> Données sécurisées et sauvegardées</span></label>
+                <label class="option-label"><input type="radio" name="axis4" value="2"><span class="option-text"><strong>Niveau 2 :</strong> Données centralisées et accessibles</span></label>
+                <label class="option-label"><input type="radio" name="axis4" value="3"><span class="option-text"><strong>Niveau 3 :</strong> Données gouvernées et catégorisées</span></label>
+                <label class="option-label"><input type="radio" name="axis4" value="4"><span class="option-text"><strong>Niveau 4 :</strong> Données industrialisées et suivies en continu</span></label>
+            </div>
+            <div class="error-msg" id="err-4">Veuillez sélectionner une option pour poursuivre.</div>
+        </div>
+
+        <!-- AXE 5 -->
+        <div class="axis-card" data-step="5">
+            <div class="step-indicator">Axe 5 sur 8 : Infrastructure numérique</div>
+            <div class="axis-title">Votre infrastructure SI est-elle adaptée au déploiement de solutions d'IA ?</div>
+            <div class="options-group">
+                <label class="option-label"><input type="radio" name="axis5" value="0"><span class
