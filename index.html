@@ -175,10 +175,11 @@
             margin: 5px 0;
         }
 
+        /* Conteneur élargi pour agrandir la matrice radar */
         .chart-container {
             position: relative;
             width: 100%;
-            max-width: 420px;
+            max-width: 550px; /* Agrandi de 420px à 550px pour un meilleur confort visuel */
             margin: 0 auto;
         }
     </style>
@@ -428,7 +429,7 @@
                 responsive: true,
                 maintainAspectRatio: true,
                 layout: {
-                    padding: 30 // Marge de sécurité de 30px pour que rien ne soit coupé dans l'iframe
+                    padding: 30
                 },
                 scales: {
                     r: {
